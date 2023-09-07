@@ -1,0 +1,158 @@
+.profile-container {
+  margin: 2rem;
+
+  .user-card {
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Adjust width to fit the grid column */
+    overflow: hidden;
+     
+
+    .user-card-header {
+      padding: 16px;
+      background-color: $ocs-yellow;
+      text-align: center;
+
+      h2 {
+        margin: 0;
+        font-size: 24px;
+        color: black;
+      }
+    }
+
+    .user-card-body {
+      padding: 16px;
+ 
+      .user-table {
+        width: 100%;
+        border-collapse: collapse;
+
+        th,
+        td {
+          padding: 8px;
+          border-bottom: 1px solid #ddd;
+          color: #333;
+          font-size: 14px;
+        }
+
+        th {
+          text-align: left;
+          background-color: #f2f2f2;
+        }
+
+        td {
+          font-weight: bold;
+        }
+      }
+
+      .edit-profile-form {
+        width: 80vw;
+        border-collapse: collapse;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        label {
+          padding: 10px;
+          // width: 40vw;
+          border-bottom: 1px solid #ddd;
+          color: #333;
+          font-size: 14px;
+          align-items: center;
+          display: flex;
+          justify-content: center;
+          text-align: left;
+          background-color: #f2f2f2;
+        }
+
+        .form-row {
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          justify-content: flex-end;
+       
+          label {
+            min-width: 80vw;
+            display: flex;
+            align-items: left;
+            justify-content: flex-end;
+            span{
+              margin-right: 5vw;
+            }
+
+            input {
+              padding: 8px;
+              border-bottom: 1px solid #ddd;
+              color: #333;
+              font-size: 14px;
+              width: 50vw;
+            }
+          }
+        }
+
+        .button-container {
+          display: flex;
+          gap: 10px;
+          margin-top: 20px;
+        }
+
+        .submit-button,
+        .cancel-button {
+          padding: 10px 20px;
+          background-color: white;
+          border: #086CDC 2px solid;
+          color: #0056b3;
+          font-size: 16px;
+          font-weight: 600;
+          border-radius: 4px;
+          cursor: pointer;
+          transition: background-color 0.3s ease;
+          margin-bottom: 1rem;
+
+          &:hover {
+            background-color: #086bdc8c;
+            color: white;
+          }
+        }
+      }
+    }
+    .edit-profile-button {
+      padding: 10px 20px;
+      background-color: white;
+      border: #086CDC 2px solid;
+      color: #0056b3;
+      font-size: 16px;
+      font-weight: 600;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      margin-bottom: 1rem;
+  
+      &:hover {
+        background-color: #086bdc8c;
+        color: white;
+      }
+    }
+
+  }
+
+
+
+  // Tablet
+  @media (min-width: 768px) {
+    .profile-container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2rem;
+
+      .user-card {
+        width: auto;
+        }
+      }
+    }
+  }
+  
+
+

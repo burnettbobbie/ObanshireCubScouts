@@ -1,0 +1,178 @@
+.about-page-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: none;
+    max-width: 100vw;
+    overflow-x: hidden;
+    .about-main {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 2rem;
+      max-width: 95vw;
+      margin-left: 2.5vw;
+  
+  
+      .info-main {
+        padding: 2rem;
+        text-align: center;
+        font-size: 16px;
+        line-height: 1.5;
+        width: 100%;
+
+          h1 {
+            color: $ocs-blue;
+            font-size: 1.6rem;
+
+            img{
+              transform: scale(0.8);
+              display: none;
+            }
+          }
+      
+        h3 {
+          color: $ocs-blue;
+        }
+  
+        p {
+          color: #333;
+          margin-bottom: 1.5rem;
+          font-size: 16px;
+        }
+
+        .section2{
+          background-color:#086bdc2b;
+          padding: 1rem;
+          border-radius: 20px;
+          border-top: solid #086CDC 3px;
+          border-right: solid #086CDC 3px;
+          font-weight: 800;
+          h3{
+              text-decoration: none;
+            }
+        }
+
+        .sectionEnd{
+            border-radius: 20px;
+            padding: 0.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            h3{
+                margin: 1rem;
+            }
+            img{
+                filter: grayscale(20%);
+                border-radius: 20px;
+                border-left: #086CDC 5px solid;
+                border-bottom:  #086CDC 5px solid;
+                max-width: 90vw;
+            }
+        }
+        section{
+            margin: 1.5rem;
+            h3{
+                text-decoration: underline solid $ocs-yellow 5px;
+            }
+        
+        &:nth-child(odd) {
+          animation: slideInLeft 2s ease-out;
+          font-weight: bolder;
+
+        }
+  
+        &:nth-child(even) {
+          animation: slideInRight 2s ease-out;
+      
+        }
+      }
+    }
+  }
+}
+  
+    // Media queries for tablet and desktop
+    @media (min-width: 768px) {
+
+  }
+
+  
+//LAPTOP
+@media only screen and (min-width: 992px) {
+  .about-page-container {
+    background-image: url(../images/Desktop\ -\ 2.png);
+    .about-main {
+      .info-main {
+        padding: 2rem;
+        section:nth-child(odd) {
+          margin-right: 10vw;
+        }
+  
+        section:nth-child(even) {
+          margin-left: 20vw;
+        }
+        .sectionEnd{
+          margin-right: 25vw;
+      }
+          h1 {
+            padding-right: 5vw;
+            color: $ocs-blue;
+            font-size: 1.3rem;
+            display: flex;
+            flex-direction: row;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            .mobile-obanshire{
+              display: none;
+            }
+            img{
+              transform: scale(0.8);
+              display: flex;
+            }
+          }
+
+        .section2{
+          padding: 1rem;
+        }
+        section{
+          .safe-text{
+            margin-right: 20vw;
+          }
+        }
+
+        .sectionEnd{
+            padding: 1rem;
+        }
+    }
+  }
+}
+}
+  
+    // Animation styles
+    @keyframes slideInLeft {
+      0% {
+        transform: translateX(-100%);
+        opacity: 0;
+      }
+      100% {
+        transform: translateX(0%);
+        opacity: 1;
+      }
+    }
+  
+    @keyframes slideInRight {
+      0% {
+        transform: translateX(100%);
+        opacity: 0;
+      }
+      100% {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+  
+  

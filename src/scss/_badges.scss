@@ -1,0 +1,176 @@
+$ocs-purple:#7414dc;
+$ocs-blue:#086CDC;
+$ocs-yellow:#FBE324;
+$ocs-green:#52b860;
+
+.badge-page-container {
+    .nav-wrap{
+        margin-left: 0;
+    }
+  
+    main {
+      text-align: center;
+      margin: 0 5rem 0 5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  
+      p {
+        margin-bottom: 1rem;
+      }
+  
+      h1 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+        color: #086CDC;
+      }
+      .search-bar{
+        padding: 1rem;
+        font-size: 1rem;
+        border-radius: 10px;
+        border:#52b860 2px solid;
+      }
+  
+      button {
+        margin-bottom: 1rem;
+      }
+  
+      input {
+        width: 100%;
+        margin-bottom: 1rem;
+      }
+    }
+  
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 0rem;
+  
+      li {
+        border: 1px solid #ccc;
+        border-radius: 20px;
+        padding: 1rem;
+        text-align: center;
+        margin: 0.5rem;
+        box-shadow: 2px 1px 12px 0px rgba(0, 0, 0, 0.516) inset;
+        -webkit-box-shadow: 2px 1px 12px 0px rgba(0, 0, 0, 0.516) inset;
+        -moz-box-shadow: 2px 1px 12px 0px rgba(0, 0, 0, 0.516) inset;
+  
+        h6 {
+          margin-bottom: 0.5rem;
+          font-size: 0.8rem;
+          color: #086CDC;
+        }
+  
+        img {
+          width: 100%;
+          max-width: 150px;
+          height: auto;
+          margin-bottom: 0.5rem;
+          
+          // &:hover{
+          //   transform: scale(1.5);
+          //   transition: 0.8s ease;
+          // }
+          // &:not(:hover){
+          //   transform: scale(1);
+          //   transition: 0.4s ease;
+          // }
+          
+        }
+
+        .tooltip{
+          height: fit-content;
+          margin: 10px;
+          cursor: pointer;
+          color: $ocs-blue;
+          box-shadow: 1px 1px 5px rgba(128, 128, 128, 0.574);
+          border-radius: 20px;
+          .tooltip-text{
+            display: none;
+            color: white;
+            background-color: $ocs-blue;
+            position: absolute;
+            border-radius: 10px;
+            padding: 20px;
+            z-index: 9999;
+            -webkit-box-shadow: -1px 1px 5px 0px rgba(0,0,0,0.75);
+          -moz-box-shadow: -1px 1px 5px 0px rgba(0,0,0,0.75); 
+          box-shadow: -1px 1px 5px 0px rgba(0,0,0,0.75);
+        }
+          &:hover
+          .tooltip-text{
+            display: block;
+          }
+        }
+  
+        button {
+          background-color:white;
+          color:black;     
+          padding: 0.5rem 1rem;
+          cursor: pointer;
+          border-radius: 10px;
+          font-weight: 600;
+          -webkit-box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);
+          -moz-box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);
+          box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);
+          border: $ocs-green solid 2px;
+          text-decoration: none;
+          &:hover{
+            -webkit-box-shadow: inset 0px 4px 4px 0px rgba(0,0,0,0.25);
+            -moz-box-shadow: inset 0px 4px 4px 0px rgba(0,0,0,0.25);
+            box-shadow: inset 0px 4px 4px 0px rgba(0,0,0,0.25);
+          }
+          &:active{
+              transform: scale(0.9);
+          }
+        }
+      }
+    }
+
+
+  
+    // Tablet styles
+    @media screen and (min-width: 768px) {
+      .badge-main {
+        text-align: left;
+  
+        h1 {
+          font-size: 2rem;
+        }
+  
+        button {
+          margin-left: 1rem;
+          margin-bottom: 0;
+        }
+  
+        input {
+          width: auto;
+          margin-bottom: 0;
+        }
+      }
+    }
+  
+    // Desktop styles
+    @media screen and (min-width: 1024px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  
+      .badge-main {
+        max-width: 800px;
+  
+        h1 {
+          font-size: 2.5rem;
+        }
+  
+        button {
+          margin-left: 0;
+        }
+      }
+    }
+  }
+  

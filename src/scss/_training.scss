@@ -1,0 +1,235 @@
+.about-training {
+    position: relative;
+    background-image: none;
+
+  
+    .content-container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 40px;
+      text-align: center;
+    }
+  
+    h2 {
+      font-size: 36px;
+      margin-bottom: 20px;
+      color:$ocs-blue;
+    }
+  
+    p {
+      font-size: 18px;
+      line-height: 1.5;
+      margin-bottom: 30px;
+      color: #555;
+    }
+  
+  
+    .training-steps {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  
+      .step {
+        max-width: 600px;
+        margin-bottom: 40px;
+        text-align: left;
+        background-color: #fbe22459;
+        border: #fbe224 5px solid;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);  
+        animation-name: slideIn; /* Set the animation name */
+        animation-duration: 2s; /* Set the animation duration */
+        animation-fill-mode: forwards;      
+         @for $i from 1 through 10 {
+          &:nth-child(#{$i}) {
+            animation-delay: 0.1s * $i; // Delay each link by 0.1s multiplied by its position
+          }
+        }
+ 
+        h3 {
+          font-size: 24px;
+          margin-bottom: 10px;
+          color: $ocs-blue;
+        }
+  
+        p {
+          font-size: 16px;
+          line-height: 1.5;
+          color: #555;
+        }
+      }
+      @keyframes slideIn {
+        0% {
+          opacity: 0;
+          transform: translateY(500px); /* Start position: move links 20px down */
+        }
+        100% {
+          opacity: 1;
+          transform: translateY(0); /* End position: move links to their original position */
+        }
+    }
+    }
+  
+    p:last-child {
+      margin-bottom: 0;
+    }
+  }
+  
+  
+  
+
+  
+ 
+  
+  
+
+  .code-of-conduct {
+    position: relative;
+    background-image:none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h2{
+      color:$ocs-blue;
+    }
+    h4{
+      margin: 0.5rem 2rem 2rem 2rem;
+      text-align: center;
+    }
+  
+    table{
+      margin-bottom: 1rem;
+      width: 80vw;
+      border-spacing: 0 10px;
+      border-radius: 20px;
+      tbody{
+        padding: 2rem;
+      tr{
+        &:nth-child(odd){
+          background-color:#fbe2244e;
+        }
+        th{
+          text-align: center;
+          // padding: 1rem;
+        }
+        td{
+          border-style: hidden;
+          padding: 0.3rem;
+
+        }
+      }
+    }
+   
+    
+    }
+  }
+  
+.useful-links-page{
+  width: 100vw;
+.useful-links-title {
+  color: $ocs-blue;
+  font-size: 22px;
+  text-align: center;
+  margin-bottom: 0.3rem;
+}
+.useful-links-container {
+  width: 100vw;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 360px 360px 0px 0px;
+  border-right:$ocs-blue 20px solid; 
+  background: rgb(8,108,220);
+  background: linear-gradient(300deg, rgba(8,108,220,1) 0%, rgba(8,108,220,1) 10%, rgba(88,156,231,1) 29%, rgba(179,210,244,1) 56%, rgba(255,255,255,1) 86%, rgba(255,255,255,1) 91%, rgba(255,255,255,1) 95%, rgba(255,255,255,1) 100%);
+  transform: translateX(-100%);
+  opacity: 0;
+  transition: transform 1s ease-in-out, opacity 0.2s ease;
+
+  &.slide-in {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+  img{
+    transform: scale(0.6);
+  }  
+
+  .useful-links-list {
+    flex-direction: column;
+    list-style: none;
+    padding-bottom: 5vh;
+    margin: 0;
+    i{
+      color:$ocs-yellow;
+      font-weight: 900;
+    }
+
+    li {
+      margin-bottom: 1rem;
+
+      a {
+        color: white;
+        text-decoration: none;
+        transition: color 0.3s ease;
+        font-weight: 900;
+
+        &:hover {
+          color: $ocs-yellow;
+        }
+      }
+    }
+  }
+}
+}
+
+
+//TABLET
+@media only screen and (min-width: 768px) {
+  .useful-links-page{
+    width: 90vw;
+  .useful-links-title {
+    margin-bottom: 1rem;
+  }
+  .useful-links-container {
+    width: 90vw;
+    flex-direction: row;
+    border-radius: 360px 360px 0px 0px;
+    border-right:$ocs-blue 60px solid; 
+  
+    img{
+      transform: scale(1);
+    }  
+  
+  }
+  }
+
+
+}
+
+//LAPTOP
+@media only screen and (min-width: 992px) {
+  .about-training{
+    background-image: url(../images/Desktop\ -\ 2.png);
+  }
+  .code-of-conduct{
+    background-image:  url(../images/Desktop\ -\ 2.png);
+     
+    table{
+      width: 60vw;
+      tbody{
+        padding: 2rem;
+      tr{
+        th{
+          padding: 1rem;
+        }
+        td{
+          padding: 1rem;
+
+          }
+        }
+      }    
+    }
+  }
+}

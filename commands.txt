@@ -1,0 +1,21 @@
+
+
+**COMPILE THE SCSS CHANGES
+npx sass --watch ./src/scss/app.scss ./src/css/app.css
+
+
+**CONNECT BACK TO GITHUB (TO COMMIT CHANGES)
+git config --global user.name "burnettbobby"
+git config --global user.email "20298092@myclyde.ac.uk"
+
+
+**fix discrepencies
+ npm install sourcemap-codec
+ nvm ls available
+
+ ADMIN dashboard**
+ react-grid-layout
+ 
+ ADMIN LOGIN:
+ un: admin 
+ pw: testing

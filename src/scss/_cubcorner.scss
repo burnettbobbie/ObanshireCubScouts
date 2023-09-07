@@ -1,0 +1,207 @@
+
+.cub-page-container{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    .welcome-text{
+        background-color: rgba(255, 255, 255, 0.484);
+        border-radius: 60px;
+        h1{
+            margin-bottom: 1rem;
+            color: $ocs-blue;
+        }
+        text-align: center;
+        padding: 1rem;
+        width: 80vw;
+        font-weight: 800;
+        font-size: 20px;
+    }
+    .scavenger{
+        width: 90vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        // padding: 1rem;
+        border-radius: 20px; 
+        .scavenger-hunt-game{
+            h2{
+                color: $ocs-blue;
+                background:$ocs-yellow;
+                // border: solid $ocs-blue 4px;
+                padding: 1rem;
+                border-radius: 20px;
+                margin-bottom: 1rem;
+                text-align: center;
+                box-shadow: 0px 0px 4px 2px rgba(0,0,0,0.5) inset;
+                -webkit-box-shadow: 0px 0px 4px 2px rgba(0,0,0,0.5) inset;
+                -moz-box-shadow: 0px 0px 4px 2px rgba(0,0,0,0.5) inset;
+                
+            }
+            .hide-game-modal{
+                display: none;
+            }
+        }
+        .memory-game {
+            margin-top: 1rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 50vh;
+            width: 90vw;
+            font-family: Arial, sans-serif;
+          
+            h2 {
+              margin-bottom: 1rem;
+              color: $ocs-blue;
+              background:$ocs-yellow;
+            //   border: solid $ocs-blue 4px;
+              padding: 1rem;
+              border-radius: 20px;
+              width: 90vw;
+              text-align: center;
+              box-shadow: 0px 0px 4px 2px rgba(0,0,0,0.5) inset;
+              -webkit-box-shadow: 0px 0px 4px 2px rgba(0,0,0,0.5) inset;
+              -moz-box-shadow: 0px 0px 4px 2px rgba(0,0,0,0.5) inset;
+            }
+          
+            .cards {
+              display: grid;
+              grid-template-columns: repeat(4, 1fr);
+              grid-gap: 1rem;
+              max-width: 500px;
+              width: 100%;
+              margin-bottom: 1rem;
+            
+                .card {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 100px;
+                background-color: #e0e0e0;
+                border-radius: 8px;
+                font-size: 2rem;
+                cursor: pointer;
+                transition: background-color 0.3s ease;
+            
+                &.flipped {
+                    background-color: #fff;
+                }
+                }
+          
+            p {
+              font-size: 1.2rem;
+              font-weight: bold;
+              color: #4caf50;
+            }
+            }
+          }
+          
+        
+    }
+    .info-main{
+        width: 90vw;
+        margin-bottom: 1rem;
+        .scout-facts {
+            background-color: $ocs-yellow;
+            // border: solid $ocs-blue 4px;
+            padding: 20px;
+            border-radius: 20px;
+            box-shadow: 0px 0px 4px 2px rgba(0,0,0,0.5) inset;
+            -webkit-box-shadow: 0px 0px 4px 2px rgba(0,0,0,0.5) inset;
+            -moz-box-shadow: 0px 0px 4px 2px rgba(0,0,0,0.5) inset;
+          
+            &__title {
+              font-size: 24px;
+              color: $ocs-blue;
+              margin-bottom: 10px;
+              text-align: center;
+            }
+          
+            &__list {
+              list-style-type: decimal-leading-zero;
+              margin-top: 10px;
+              background-color: white;
+              padding: 2.5rem;
+              border-radius: 20px;
+              border: black 1px solid;
+              box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75) inset;
+            -webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75) inset;
+            -moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75) inset;
+          
+              & .scout-facts__item {
+                margin-bottom: 10px;
+                color: $ocs-purple;
+                animation: fade-in 1s ease-in-out;
+                font-size: 20px;
+                font-weight: 600;
+                margin-bottom: 1rem;
+
+                &:nth-child(odd){
+                    animation: fade-in 3s ease;
+                    color: black;
+                }
+      
+              }
+            }
+          }
+          
+          @keyframes fade-in {
+            0% {
+              opacity: 0;
+              transform: translateY(60px);
+            }
+            100% {
+              opacity: 1;
+              transform: translateY(0);
+            }
+          }
+          
+    }
+}
+
+.scavenger-background-image{
+    background-image: url(../images/Desktop\ -\ 6.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 40vh;
+
+    .modal-content{
+        text-align: center;
+        padding-right: 15vw;
+   
+    }
+}
+    
+
+@media only screen and (min-width: 1200px){
+    .cub-page-bg{
+        background-image: url(../images/Desktop\ -\ 6.png);
+    }
+    
+    .cub-page-container{
+        .welcome-text{
+            background-color: rgba(255, 255, 255, 0.74);
+            width: 50vw;
+        }
+        .scavenger{
+            .memory-game {
+                h2 {
+                width: auto;
+                }
+            }
+        }
+        .info-main{
+            .scout-facts {          
+                &__list {
+                padding: 5rem;
+                }
+            }
+        }
+    }
+
+
+}

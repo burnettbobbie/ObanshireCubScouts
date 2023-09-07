@@ -1,0 +1,155 @@
+
+
+.registration-container {
+  .success-message{
+    text-align: center;
+    width: 50vw;
+    margin-left: 25vw;
+    padding: 2rem;
+    font-weight: 800;
+    font-size: 22px;
+    color: #0056b3;
+  }
+
+  .toggle-form-wrapper {
+    text-align: center;
+    
+  .toggle-form-button {
+    padding: 10px 20px;
+    background-color: white;
+    border:#086CDC 2px solid;
+    color:#0056b3;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 1rem;
+  
+    &:hover {
+      background-color:#086bdc8c;
+      color: white;
+    }
+    }
+}
+  
+.register-modal {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 400px;
+    margin: 1rem auto;
+  
+    .x-btn {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      font-size: 20px;
+      cursor: pointer;
+    }
+  
+    .register-form {
+      margin-top: 20px;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+  
+      .input-group {
+        position: relative;
+        margin-bottom: 20px;
+        width: 100%;
+  
+        i {
+          position: absolute;
+          top: 50%;
+          left: 10px;
+          transform: translateY(-50%);
+          color:rgba(0, 0, 0, 0.59);
+    
+        }
+  
+        .form-control {
+          width: 100%;
+          padding: 10px 40px 10px 30px;
+          border: none;
+          border-radius: 5px;
+          background-color: #f9f9f9;
+          color: #333;
+          text-align: center;
+        }
+  
+        .alert {
+          margin-top: 5px;
+          font-size: 14px;
+          color: #dc3545;
+        }
+      }
+  
+      .submit-btn {
+        width: 100%;
+        padding: 10px;
+        font-size: 1rem;
+        border-radius: 10px;
+        font-weight: 700;
+        color:#086CDC;
+        width: auto;
+        height: 60px;
+        background: white;
+        -webkit-box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);
+        -moz-box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);
+        box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);
+        border: none;
+        text-decoration: none;
+        &:hover{
+            -webkit-box-shadow: inset 0px 4px 4px 0px rgba(0,0,0,0.25);
+            -moz-box-shadow: inset 0px 4px 4px 0px rgba(0,0,0,0.25);
+            box-shadow: inset 0px 4px 4px 0px rgba(0,0,0,0.25);
+        }
+        &:active{
+            transform: scale(0.9);
+        }        
+    }
+    
+      .register-button {
+        margin-top: 20px;
+      }
+    }
+  }
+}
+  
+  // FontAwesome icons
+  .fas,
+  .far {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    &.fa-user {
+      left: 10px;
+    }
+  
+    &.fa-envelope {
+      left: 11px;
+    }
+  
+    &.fa-lock {
+      left: 12px;
+    }
+  }
+  
+  // Media Queries
+  @media screen and (min-width: 768px) {
+    .modal {
+      max-width: 600px;
+    }
+  }
+  
+  @media screen and (min-width: 992px) {
+    .modal {
+      max-width: 800px;
+    }
+  }
+  

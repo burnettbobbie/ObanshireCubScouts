@@ -1,0 +1,38 @@
+{
+  "files": {
+    "main.css": "/static/css/main.38bb1953.css",
+    "main.js": "/static/js/main.b60486d8.js",
+    "static/js/787.3c8fe2a3.chunk.js": "/static/js/787.3c8fe2a3.chunk.js",
+    "static/media/Desktop - 6.png": "/static/media/Desktop - 6.5da33079595e5a857082.png",
+    "static/media/Desktop - 22.png": "/static/media/Desktop - 22.6a987bf3bd3e6eb59c33.png",
+    "static/media/Desktop - 2.png": "/static/media/Desktop - 2.fb7f3399823131ad43c0.png",
+    "static/media/fa-solid-900.ttf": "/static/media/fa-solid-900.4a2cd718d7031b732e76.ttf",
+    "static/media/rope.png": "/static/media/rope.fe3fd72990bd8e2242c6.png",
+    "static/media/fa-brands-400.ttf": "/static/media/fa-brands-400.150de8eaa454d669c405.ttf",
+    "static/media/fa-solid-900.woff2": "/static/media/fa-solid-900.bb975c966c37455a1bc3.woff2",
+    "static/media/tug-of-war.jpg": "/static/media/tug-of-war.f12b7351b3c905cae81e.jpg",
+    "static/media/fa-brands-400.woff2": "/static/media/fa-brands-400.e033a13ee751afc1860c.woff2",
+    "static/media/bjorn-snelders-Cd3Ek7rNXSk-unsplash.jpg": "/static/media/bjorn-snelders-Cd3Ek7rNXSk-unsplash.76ff9a9bfa0b612d62ae.jpg",
+    "static/media/scoutCabin.jpg": "/static/media/scoutCabin.0a34ae81e5fc9b4ca4d5.jpg",
+    "static/media/fa-regular-400.ttf": "/static/media/fa-regular-400.d87474231f4192884802.ttf",
+    "static/media/signpost.webp": "/static/media/signpost.a70f1bc722e9cea3900b.webp",
+    "static/media/Frame 21.png": "/static/media/Frame 21.35968f1a0513c760b620.png",
+    "static/media/fa-regular-400.woff2": "/static/media/fa-regular-400.3223dc79c1adee56370b.woff2",
+    "static/media/scoutsUK.png": "/static/media/scoutsUK.c473d0ceedefec4db456.png",
+    "static/media/Frame 20.png": "/static/media/Frame 20.e7ef8c642f46d6ca34a3.png",
+    "static/media/Frame 19.png": "/static/media/Frame 19.d6ba9f6c1d750c35a634.png",
+    "static/media/Frame 17.png": "/static/media/Frame 17.30d2ee6b0fcbfd46b4d1.png",
+    "static/media/purplecrop.png": "/static/media/purplecrop.730c2ab5e37c6c72078f.png",
+    "static/media/Frame 22.png": "/static/media/Frame 22.59b2abf6800336e86632.png",
+    "static/media/fa-v4compatibility.ttf": "/static/media/fa-v4compatibility.0e3a648be390bd8cb094.ttf",
+    "static/media/fa-v4compatibility.woff2": "/static/media/fa-v4compatibility.68577e40f3e70067b5da.woff2",
+    "index.html": "/index.html",
+    "main.38bb1953.css.map": "/static/css/main.38bb1953.css.map",
+    "main.b60486d8.js.map": "/static/js/main.b60486d8.js.map",
+    "787.3c8fe2a3.chunk.js.map": "/static/js/787.3c8fe2a3.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.38bb1953.css",
+    "static/js/main.b60486d8.js"
+  ]
+}

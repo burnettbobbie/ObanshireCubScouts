@@ -1,0 +1,81 @@
+.event-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    
+    .event-card {
+      background-color: #f2f2f2;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      
+      .event-card-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 10px;
+        
+        h2 {
+          font-size: 18px;
+          margin: 0;
+        }
+        
+        span {
+          font-size: 14px;
+          color: #888888;
+        }
+      }
+      
+      .event-card-body {
+        p {
+          margin: 0;
+          font-size: 16px;
+          line-height: 1.5;
+        }
+        
+        p:last-child {
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+  .calendar-container{
+    display: flex;
+    flex-direction: row;
+    margin-left: 5vw;
+    .fc-view-harness-active, .fc-view-harness {
+        width: 80vw;
+        margin:2rem;
+        overflow: hidden;
+        button{
+            background-color: white;
+        }
+        .fc-button{
+            background-color: white;
+        }
+        .fc-event-title{
+            font-size: 0.9rem;
+            color:black;
+        }
+        .fc-event-time{
+            font-size: 0.8rem;
+            font-weight: 900;
+            color:red;
+        }
+    }
+    .fc-header-toolbar, .fc-toolbar {
+        margin: 0;
+        transform: scale(0.7);
+        color:#086CDC;
+    }
+    --fc-border-color: #007bff;
+    --fc-daygrid-event-dot-width: 3px;
+
+}
+
+  //TABLET
+  @media only screen and (min-width: 922px) {
+    .calendar-container{
+      margin-left: 0vw;
+    }
+  }

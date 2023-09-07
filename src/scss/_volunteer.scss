@@ -1,0 +1,64 @@
+
+.volunteer-page{
+  margin-left: 5vw;
+    .about-main {
+      height: fit-content;
+      width: 90vw;
+      margin-left: 5vw;
+      display: flex;
+      flex-direction: column;  
+  
+      .info-sidebar1 {
+        background-color: transparent;
+        width: 80vw;
+  
+        p {
+          background-color: white;
+          border-radius: 30px;
+          margin: 1rem;
+          padding: 10px;
+          text-align: center;
+          -webkit-box-shadow: 0px 4px 4px 1px rgba(0, 0, 0, 0.25);
+          -moz-box-shadow: 0px 4px 4px 1px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px 1px rgba(0, 0, 0, 0.25);
+          border: #52b860 solid 4px;
+        }
+      }
+      .info-main {
+        background-color: white;
+        width: 80vw;
+        text-align: left;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        margin: 0;
+        padding: 2rem;
+        background-color: #fbe22488;
+      }
+  
+    }
+  }
+
+
+  
+
+
+//LAPTOP/DESKTOP
+@media only screen and (min-width: 992px) {
+  .volunteer-page{
+    margin-left: 0;
+    background-image: url(../images/Desktop\ -\ 2.png);
+      .about-main {
+        flex-direction: row;  
+    
+        .info-sidebar1 {
+          width: 20vw;
+        }
+        .info-main {
+          width: 60vw;
+          line-height: 1.9rem;
+        }
+      }
+    }
+}
+  

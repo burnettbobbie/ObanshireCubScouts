@@ -1,0 +1,27 @@
+$ocs-purple:#7414dc;
+$ocs-blue:#086CDC;
+$ocs-yellow:#FBE324;
+$ocs-green:#52b860;
+
+@import '~@fortawesome/fontawesome-free/css/all.css';
+
+
+@import 'global'; //imports the global scss file
+@import 'home'; 
+@import 'navbar';
+@import 'footer';
+@import 'about';
+@import 'cubcorner';
+@import 'slideshow';
+@import 'volunteer';
+@import 'gallery';
+@import 'volunteerDash';
+@import 'admin';
+@import 'register';
+@import 'badges';
+@import 'calendar';
+@import 'eventManager';
+@import 'volunteerList';
+@import 'training';
+@import 'profile';
+@import 'scouts';

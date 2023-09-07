@@ -1,0 +1,204 @@
+
+
+  .event-manager-container {
+    display: grid;
+    // grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr;
+    margin: 1.2rem;
+    gap: 20px;
+    width: 90vw;
+    margin-left: 5vw;
+  
+  .create-event-section {
+    background-color: #f1f1f1;
+    padding: 20px;
+    border-radius: 20px;
+    animation: slideInLeft 0.5s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 90vh;
+  
+    @keyframes slideInLeft {
+      from {
+        transform: translateX(-20px);
+        opacity: 0;
+      }
+      to {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+    .event-admin-form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin: 0;
+    
+      form {
+        .form-group {
+          margin-bottom: 20px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          width: 60vw;
+    
+          label {
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 8px;
+          }
+    
+          input {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 14px;
+            width: 80vw;
+          }
+          textarea{
+              width: 80vw;
+              height: 30vh;
+          }
+        }
+    
+        button {
+          background-color: white;
+          border:#086CDC 2px solid;
+          color:#0056b3;
+          font-size: 14px;
+          width: 100%;
+          font-weight: 600;
+          border-radius: 4px;
+          cursor: pointer;
+          padding:0.5rem;
+          transition: background-color 0.3s ease;
+        
+          &:hover {
+            background-color:#086bdc8c;
+            color: white;
+          }
+        }
+      }
+    }
+  }
+  
+  .event-list-section {
+    background-color: #ffffff;
+
+    border-radius: 10px;
+    animation: slideInRight 0.5s ease;
+
+    @keyframes slideInRight {
+      from {
+        transform: translateX(20px);
+        opacity: 0;
+      }
+      to {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+    .event-item {
+      margin-bottom: 20px;
+      width: auto;
+      .card {
+        border-radius: 20px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        background-color: #ffffff;
+    
+        .card-header {
+          background-color: #f1f1f1;
+          padding: 10px;
+          border-top-left-radius: 20px;
+          border-top-right-radius: 20px;
+          text-align: center;
+    
+          .event-name {
+            margin: 0;
+            font-size: 20px;
+            color: #333333;
+          }
+        }
+    
+        .card-body {
+          padding: 10px;
+          display: grid;
+          grid-template-columns: 2fr 1fr;
+
+          .event-description{
+            color: #0056b3;
+            margin:0.3rem;
+          }
+          .event-location{
+            color: red;
+          }
+          .event-date {
+            margin: 0;
+            font-size: 14px;
+            color:black;
+            font-weight: 800;
+          }
+        .admin-buttons{  
+          display: flex;
+          flex-direction: column;
+          button{
+            background-color: white;
+            border:#086CDC 2px solid;
+            color:#0056b3;
+            font-size: 14px;
+            font-weight: 600;
+            border-radius: 4px;
+            cursor: pointer;
+            padding:0.5rem;
+            margin: 10px;
+            transition: background-color 0.3s ease;
+          
+            &:hover {
+              background-color:#086bdc8c;
+              color: white;
+            }
+          }
+        }
+        }
+      }
+    }
+  }
+}
+
+  
+  //TABLET
+  @media only screen and (min-width: 768px) {
+    .event-manager-container {
+      grid-template-columns: 1fr 2fr;
+    
+    .create-event-section {
+      .event-admin-form {
+        margin: 0.2rem;
+      
+        form {
+          .form-group {
+            width: 20vw;      
+            input {
+              width: 20vw;
+            }
+            textarea{
+                width: 20vw;
+            }
+          }
+        }
+      }
+    }
+    .event-item{
+      width: 70vw;
+    }
+  }    
+}
+  
+
+
+  
+  

@@ -1,0 +1,142 @@
+.scouts-container{
+    min-height:100vh;
+    max-width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    .about-history{
+        flex-direction: column;
+        width: 70vw;
+        text-align: center;
+        h1, h3{
+            color: $ocs-blue;
+            text-decoration: underline $ocs-yellow 3px;
+        }
+
+        div{
+            margin: 1rem;
+        }
+    }
+    .uk-scouts{
+        position: relative;
+        width: 60vw;
+        h2{
+            color:$ocs-purple;
+            margin-bottom: 1rem;
+        }
+        img{
+            transform: scale(0.4);
+            width: 500px;
+        }
+        section{
+            margin: 0.5rem;
+          
+                    
+        &:nth-child(odd) {
+            color: red;
+            animation: slideInLeft 2s ease-out;
+  
+          }
+    
+          &:nth-child(even) {
+            animation: slideInRight 2s ease-out;
+        
+          }
+        }
+    }
+    .cub-scout-activities {
+        margin: 1rem;
+       border:rgb(255, 238, 0) solid 3px;
+       padding: 3rem;
+       border-radius: 20px;
+       -webkit-box-shadow: 1px 3px 9px 0px rgba(0,0,0,0.75);
+       -moz-box-shadow: 1px 3px 9px 0px rgba(0,0,0,0.75);
+       box-shadow: 1px 3px 9px 0px rgba(0,0,0,0.75);
+  
+        h1{
+            text-align: center;
+            color: $ocs-blue;
+            text-decoration: underline $ocs-yellow 3px solid;
+        }
+      
+        .activity-list {
+            list-style-type: none;
+            padding: 0.2rem;
+            text-align: center;                
+                .activity-item {
+                    color: $ocs-purple;
+                    font-size: 18px;
+                    margin: 0.2rem;
+                    opacity: 0;
+                   &:nth-child(odd){
+                    animation: fade-in 3s forwards;
+                    color: $ocs-blue;
+                    animation-delay: calc(var(--animation-delay) * var(--index));
+                   }
+                   &:nth-child(even) {
+                    animation: fade-in 5s forwards;
+                    animation-delay: calc(var(--animation-delay) * var(--index));
+                  }
+                }
+            }
+        }
+    .scout-summary{
+        margin: 10vw ;
+        text-align: center;
+        font-weight: 900;
+        width: 60vw;
+    }           
+}
+@keyframes fade-in {
+    from {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  @keyframes fade-in-right {
+    from {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+
+@keyframes slideInLeft {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0%);
+      opacity: 1;
+    }
+  }
+
+@keyframes slideInRight {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
+//LAPTOP
+@media only screen and (min-width: 992px) {
+    .scouts-container{
+        background-image: url(../images/Desktop\ -\ 22.png);
+    }
+}
